@@ -1,7 +1,7 @@
 
 -----
 
-#  Digest Drop: Personalized Content Aggregator
+#  Synapse: Personalized Content Aggregator
 
 [](https://www.java.com/)
 [](https://spring.io/projects/spring-boot)
