@@ -1,0 +1,69 @@
+# ------------------------------------------------------------
+# Project: Smart Content Aggregator (.gitignore)
+# ------------------------------------------------------------
+
+# 1. COMPILED & BUILD OUTPUT #
+##############################
+# Maven-specific output directory
+/target/
+# Gradle-specific output directory (if using both tools)
+/build/
+
+# Compiled Java Classes
+*.class
+
+# Package Files (JARs, WARs, etc.)
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Maven build/version files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+# Maven Wrapper specific files
+.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# 2. SENSITIVE CONFIGURATION & SECRETS #
+########################################
+# CRITICAL: Exclude local application properties which contain API keys and passwords.
+# Users must provide their own file locally.
+application.properties
+application.yml
+
+# 3. IDE AND OS FILES #
+#######################
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+*.iws
+
+### Eclipse/STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### OS Generated Files ###
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"> </head>
+<body>
+<div class="container"> <h1>Preferences</h1>
+    <p>Add or remove keywords, separated by commas.</p>
+
+    <form th:action="@{/keywords}" method="post">
+        <div class="form-group"> <label for="keywords">Keywords:</label>
+            <textarea id="keywords" name="keywords" th:text="${keywords}"></textarea>
+        </div>
+        <button type="submit">Save Preferences</button>
+    </form>
+
+    <form th:action="@{/logout}" method="post" style="margin-top: 20px;">
+        <button type="submit">Log Out</button>
+    </form>
+</div>
+</body>
+</html>
